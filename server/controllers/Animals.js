@@ -15,7 +15,6 @@ module.exports = {
         animal.save()
           .then(newAnimalData =>  res.redirect('/'))
           .catch(err => console.log(err))
-        res.redirect('/');
     },
     findOne: (req,res) => {
         Animal.findOne({_id: req.params.id})
