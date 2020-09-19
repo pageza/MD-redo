@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Mongoose Dashboard - REDO</title>
+</head>
+<body>
+    <div>
+        <h1>Mongoose Dashboard</h1>
+        <hr>
+        <a href="/animal/new">Add an new animal</a>
+    </div>
+    
+    <% animals.forEach(animal => { %>
+        <div class="animalCard">
+            <h3>Name: <%= animal.name %> </h3>
+            <h4>Type: <%= animal.type %> </h4>
+            <p>Age: <%= animal.age %> </p>
+            <p><a href="/animal/<%= animal.id %>/edit" >Edit this animal</a></p>
+            <p><a href="/animal/<%= animal.id %>" >View this animal</a></p>
+        </div>
+    <% }) %>
+    
+</body>
+</html>

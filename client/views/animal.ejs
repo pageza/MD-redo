@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Animal</title>
+</head>
+<body>
+    <div>
+        <h2>This is your animal</h2>
+        <hr>
+        <a href="/">Home</a>
+        <p><a href="/animal/<%= animal.id %>/edit" >Edit this animal</a></p>
+
+    </div>
+    <div>
+        <h3>Name: <%= animal.name %> </h3>
+        <h4>Type: <%= animal.type %> </h4>
+        <p>Age: <%= animal.age %> </p>
+        <form action="/animal/<%= animal.id %>/destroy" method="post"><button type="submit">Delete this animal</button></form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add an animal</title>
+</head>
+<body>
+    <div>
+        <h1>Add an animal!</h1>
+        <hr>
+    </div>
+    <div>
+        <form action="/animal/new" method="POST">
+            <p><input type="text" name="type" placeholder="What kind of animal?" id=""></p>
+            <p><input type="text" name="name" placeholder="What is the animals name?" id=""></p>
+            <p><input type="number" name="age" placeholder="How old is the animal" id=""></p>
+            <button type="submit">Add your animal!</button>
+        </form>
+    </div>
+</body>
+</html>
